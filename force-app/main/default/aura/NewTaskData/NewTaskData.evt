@@ -1,0 +1,8 @@
+<aura:event type="COMPONENT" description="Event template" >
+	<aura:attribute name="taskType" type="string" default=""/>
+    <aura:attribute name="taskName" type="string" default=""/>
+    <aura:attribute name="taskDescription" type="string" default=""/>
+    <aura:attribute name="taskDifficulty" type="string" default=""/>
+    <aura:attribute name="taskSubject" type="string" default=""/>
+    <aura:attribute name="taskDueDate" type="Date" default=""/>
+</aura:event>

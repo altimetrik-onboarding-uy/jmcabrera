@@ -1,0 +1,60 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="TaskCardKanbanController" >
+	<aura:attribute name="tasks" type='List' default="[]"/>
+    <aura:registerEvent name="openNewTaskCard" type="c:OpenNewTaskCard"/>
+    <aura:registerEvent name="closeTask" type="c:CloseTaskEvent"/>
+    
+    <div class="borderContainer">
+        <lightning:layout verticalAlign="center" horizontalAlign="center">
+            <aura:if isTrue="{!not((v.tasks[0].WhoId == '-1'))}">
+                <aura:set attribute="else">
+                    <lightning:layoutItem>
+                        <lightning:card class="slds-card_boundary" aura:id="{!v.tasks[0].Task_Type__c}"  title="{!v.tasks[0].Task_Type__c + ' Tasks'}">
+                            <aura:set attribute="actions">
+                                <lightning:button name="{!v.tasks[0].Task_Type__c}" label="New Task" onclick="{!c.newTask}" />
+                            </aura:set>
+                            <p class="slds-p-horizontal_small">
+                                {!v.tasks[0].Task_Type__c}
+                            </p>
+                        </lightning:card>
+                    </lightning:layoutItem>
+                </aura:set>
+                <lightning:layoutItem>
+                    <lightning:card class="slds-card_boundary" aura:id="{!v.tasks[0].Task_Type__c}" title="{!v.tasks[0].Task_Type__c + ' Tasks'}">
+                        <aura:set attribute="actions">
+                            <lightning:button name="{!v.tasks[0].Task_Type__c}" label="New Task" onclick="{!c.newTask}" />
+                        </aura:set>
+                        <p class="slds-p-horizontal_small">
+                            {!v.tasks[0].Task_Type__c}
+                        </p>
+                    </lightning:card>
+                    <lightning:card title="">
+                        <aura:iteration items="{!v.tasks}" var="taskTypes">
+                            <lightning:card class="slds-card_boundary" title="{!taskTypes.name}">
+                                <p class="slds-p-horizontal_small">
+                                    {!taskTypes.name}
+                                    <lightning:tile label="{!taskTypes.name}">
+                                        <aura:set attribute="media">
+                                            <lightning:icon iconName="action:log_event"/>                                    
+                                        </aura:set>
+                                        <p class="slds-truncate" title="Company">Id: {!taskTypes.Id}</p>
+                                        <p class="slds-truncate" title="Company">Name: {!taskTypes.Task_Name__c}</p>
+                                        <p class="slds-truncate" title="Company">Points: {!taskTypes.Points__c}</p>
+                                        <p class="slds-truncate" title="Salesforce">Status: {!taskTypes.Status}</p>
+                                        <p class="slds-truncate" title="Salesforce">Description: {!taskTypes.Description__c}</p>
+                                        <p class="slds-truncate" title="Salesforce">IsClosed: {!taskTypes.IsClosed}</p>                                
+                                    </lightning:tile>
+                                    
+                                    <div class="slds-align_absolute-center" style="height:5rem">
+                                        <lightning:button name="{!taskTypes.Id}" label="Complete Task" onclick="{!c.completeTask}" />
+                                    </div>
+                                </p>
+                            </lightning:card>
+                        </aura:iteration>
+                    </lightning:card>
+                    
+                </lightning:layoutItem>                    
+                <lightning:layoutItem size="1">&nbsp;</lightning:layoutItem>
+            </aura:if>  
+        </lightning:layout>
+    </div>
+</aura:component>

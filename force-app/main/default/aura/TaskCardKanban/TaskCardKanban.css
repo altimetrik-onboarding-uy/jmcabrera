@@ -1,0 +1,11 @@
+.THIS {
+    background-color: grey;
+}
+
+.THIS.borderContainer {
+    border-radius: 25px;
+  	background-color: #40c764;
+}
+.THIS .white {
+    background-color: white;
+}

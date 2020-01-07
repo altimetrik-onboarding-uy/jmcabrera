@@ -1,0 +1,59 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:registerEvent name="openNewTaskCard" type="c:OpenNewTaskCard"/>
+    <aura:registerEvent name="newTaskData" type="c:NewTaskData"/>
+    <aura:attribute name="type" type="string" default=""/>
+   
+    <aura:attribute name="difficulty" type="List" default="[
+    {'label': 'Trivial', 'value': 'Trivial'},
+    {'label': 'Easy', 'value': 'Easy'},
+    {'label': 'Medium', 'value': 'Medium'},
+	{'label': 'Hard', 'value': 'Hard'}
+    ]"/>
+   	<aura:attribute name="taskType" type="List" default="[
+    {'label': 'New', 'value': 'new'},
+    {'label': 'In Progress', 'value': 'inProgress'},
+    {'label': 'Completed', 'value': 'finished'}
+    ]"/>
+    
+    <section aura:id="sector" role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="{!c.closeMe}">
+                    <lightning:icon iconName="action:remove" size="medium" alternativeText="Close"/>                    
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">New {!v.type} Task</h2>
+               <!-- <p class="slds-m-top_x-small">Here’s a tagline if you need it. It is allowed to extend across mulitple lines, so I’m making up content to show that to you. It is allowed to
+                    <a href="javascript:void(0);">contain links or be a link</a>.</p>-->
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="12">                       
+                       	<lightning:input aura:id="taskNameInput" name="taskName" required="true" value="" label="Task Name" placeholder="type here..." maxlength="128" />
+                    </lightning:layoutItem>
+                	<lightning:layoutItem size="5">
+                        <!--String subject,String contactId,String status,String taskType-->
+                        <aura:if isTrue="{!and(not(empty(v.type)),v.type == 'TO-DO')}">
+                            <lightning:input aura:id="dateInput" type="date" name="activityDate" label="DueDate" />
+                        </aura:if>                       	
+                       	<lightning:input aura:id="subjectInput" name="subject" label="Subject" placeholder="type here..."/>                       
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="1">
+                        &nbsp;                  
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="5">
+                    	<lightning:combobox aura:id="difficultyInput" name="difficulty" label="Difficulty" value="Trivial" placeholder="Select Difficulty" options="{! v.difficulty }" onchange=""/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12">                       
+                       	<lightning:textarea aura:id="descriptionInput" name="descriptionArea" label="Task Description" placeholder="type here..." maxlength="250"/>                 
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick="{!c.closeMe}">Cancel</button>
+                <button class="slds-button slds-button_brand" onclick="{!c.saveNewTaskHandler}">Save</button> 
+            </footer>
+        </div>
+    </section>
+    <div aura:id="backDropDiv" class="slds-backdrop "></div>
+</aura:component>

@@ -1,0 +1,18 @@
+({
+	closeMe : function(component, event, helper) {
+        helper.closeMe(component);
+	},
+    openNewTaskCardHandler : function(component, event,helper)
+    {
+    	let eTypOfTask = event.getParam("typeOfTask");
+        if(eTypeOfTask)
+        {
+            component.set("v.type",eTypeOfTask);
+        }
+	},
+    saveNewTaskHandler : function(component, event,helper)
+    {
+        helper.newTaskHandler(component);
+        helper.closeMe(component);
+    }
+})
