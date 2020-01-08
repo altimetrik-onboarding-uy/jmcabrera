@@ -12,6 +12,7 @@ public class TaskCompletionBatch implements Database.Batchable<sObject>{
     {
         List<Contact> toUpdateContact = new List<Contact>();
         List<Task> toUpdateTask = new List<Task>();
+        
         for(Contact c : scope)
         {
         	if(c.tasks != null)
@@ -20,24 +21,24 @@ public class TaskCompletionBatch implements Database.Batchable<sObject>{
                 
                 for(Task task : c.tasks)
                 {                    
-                    if(task.Task_Type__c == 'Daily')
-                    {                        
-                        contactPoints -= task.Points__c;                        
-                    }else if(task.Task_Type__c == 'Habit')
+                    switch on task.Task_Type__c
                     {
-                        if(task.Status == 'Completed')
+                     	when 'Daily'
                         {
-                            contactPoints += task.Points__c;
-                        }else
-                        {
-                            contactPoints -= task.Points__c;
+                            contactPoints -= task.Points__c; 
+                            task.Status = 'New';
+                        	toUpdateTask.add(task);
                         }
-                    }
-                    if(task.Task_Type__c != 'TO-DO')
-                    {
-                        task.Status = 'New';
-                        toUpdateTask.add(task);
-                    }
+                        when 'Habit'
+                        {
+                            contactPoints += task.Status == 'Completed' ? task.Points__c : -task.Points__c;                           
+                        }
+                        when 'TO-DO'
+                        {
+                            task.Status = 'New';
+                        	toUpdateTask.add(task);
+                        }
+                    }                    
                 }   
                 c.Points__c = contactPoints;
                 toUpdateContact.add(c);

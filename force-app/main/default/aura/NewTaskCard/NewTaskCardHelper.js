@@ -20,7 +20,6 @@
             "taskSubject":taskSubject,
             "taskDueDate":taskDueDate
                          });
-        console.log(taskType+":"+taskName+":"+ taskDescription+":"+ taskDifficulty+":"+ taskSubject+":"+ taskDueDate);
         nEvent.fire();
 	},
     closeMe : function(component)

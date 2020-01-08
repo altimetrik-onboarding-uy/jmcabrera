@@ -30,8 +30,15 @@
                     <lightning:card title="">
                         <aura:iteration items="{!v.tasks}" var="taskTypes">
                             <lightning:card class="slds-card_boundary" title="{!taskTypes.name}">
+                                <aura:set attribute="actions">
+                                        <lightning:button name="{!v.tasks[0].Task_Type__c}" label="Close Task" onclick="{!c.newTask}" >
+                                    	<lightning:icon iconName="action:remove" size="medium" alternativeText="Close"/>                    
+                    						<span class="slds-assistive-text">Close</span>
+                                    </lightning:button>
+                                    </aura:set>
                                 <p class="slds-p-horizontal_small">
                                     {!taskTypes.name}
+                                    
                                     <lightning:tile label="{!taskTypes.name}">
                                         <aura:set attribute="media">
                                             <lightning:icon iconName="action:log_event"/>                                    
@@ -43,7 +50,6 @@
                                         <p class="slds-truncate" title="Salesforce">Description: {!taskTypes.Description__c}</p>
                                         <p class="slds-truncate" title="Salesforce">IsClosed: {!taskTypes.IsClosed}</p>                                
                                     </lightning:tile>
-                                    
                                     <div class="slds-align_absolute-center" style="height:5rem">
                                         <lightning:button name="{!taskTypes.Id}" label="Complete Task" onclick="{!c.completeTask}" />
                                     </div>

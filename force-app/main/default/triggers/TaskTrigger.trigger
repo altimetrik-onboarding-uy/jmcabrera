@@ -1,19 +1,22 @@
 trigger TaskTrigger on Task (before insert,before update,after insert,after update) {
 	
     if(Trigger.isBefore){
-        if(Trigger.isInsert){
-        	System.debug('isBefore isInsert');
+        if(Trigger.isInsert)
+        {
+        
    		}
-        if(Trigger.isUpdate){
-        	System.debug('isBefore isUpdate');
+        if(Trigger.isUpdate)
+        {
+        	
    		}
     }
     if(Trigger.isAfter){
-        if(Trigger.isInsert){
-        	System.debug('AFT INSERT');
+        if(Trigger.isInsert)
+        {
+        
    		}
-        if(Trigger.isUpdate){
-            System.debug('aft UPD');
+        if(Trigger.isUpdate)
+        {
         	TaskTriggerHandler.checkOnCompleteTask(Trigger.new);
    		}
     }
