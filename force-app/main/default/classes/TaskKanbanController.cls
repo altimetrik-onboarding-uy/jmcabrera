@@ -23,17 +23,18 @@ public without sharing class TaskKanbanController {
         insert t;
     }
     @AuraEnabled
+    public static void deleteTask(String taskId)
+    {
+		Task task = [Select id FROM task where id = :taskId];
+        delete task;
+    }
+    @AuraEnabled
     public static List<Contact> getContacts()
     {
-        List<Contact> contactWithTasks = new List<Contact>();
-        for(Contact c : [SELECT id,name,Points__c,(Select Id,Subject,Task_Name__c,Description__c,ActivityDate,CreatedDate ,Task_Type__c,Points__c,Status,WhoId,IsClosed FROM Tasks) from contact])
-        {
-          	if(c.tasks != null && c.tasks.size() >= 1)
-            {
-                contactWithTasks.add(c);
-            }
-        }
-        return contactWithTasks;
+        return [SELECT id,name,Points__c,
+                	(Select Id,Subject,Task_Name__c,Description__c,ActivityDate,CreatedDate ,Task_Type__c,Points__c,Status,WhoId,IsClosed 
+                     FROM Tasks)
+                from contact];
     }
      @AuraEnabled
     public static List<Task> getTasksOfContact(string contactId)
@@ -51,17 +52,55 @@ public without sharing class TaskKanbanController {
         return taskOfContacts;
     }
     @AuraEnabled
-    public static void completeTask(string taskId)
+    public static void completeTask(string contactId,string taskId,string state)
     {
-        List<Task> tasks = new List<Task>();
-        for(Task t : [SELECT id,status from Task where id = :taskId])
+        List<string> tasksID = new List<string>{taskId};
+        List<Task> tasksToUpdate = new List<Task>();
+        List<Contact> contactsToUpdate = new List<Contact>();
+      /*  for(Task t : [SELECT id,status from Task where id = :taskId])
         {
             t.Status = 'Completed';
-            tasks.add(t);
+            tasksToUpdate.add(t);
         }
-        if(tasks.size() >= 1)
+        if(tasksToUpdate.size() >= 1)
         {
-            update tasks;
+            update tasksToUpdate;
+        }*/
+        
+        for(Contact c : [SELECT id,name,Points__c,
+                	(Select Id,Subject,Task_Name__c,Description__c,ActivityDate,CreatedDate ,Task_Type__c,Points__c,Status,WhoId,IsClosed 
+                     FROM Tasks where id in :tasksID)
+                from contact where id = :contactId])
+        {
+            if(c.tasks != null && c.tasks.size() >= 1)
+            {
+               double contactPoints = c.Points__c == null ? 0 : c.Points__c;
+                
+                for(Task t : c.tasks)
+                {
+                    if(t.Status == 'Completed') continue;
+                    	
+                    t.Status = 'Completed';
+                    if(state == 'w')
+                    {
+                        contactPoints += t.Points__c;
+                    }else 
+                    {
+                        contactPoints -= t.Points__c;
+                    }
+                    tasksToUpdate.add(t);
+                }
+                c.Points__c = contactPoints;
+                contactsToUpdate.add(c);
+            }
+        }
+        if(tasksToUpdate.size() >= 1)
+        {
+            update tasksToUpdate;
+        }
+        if(contactsToUpdate.size() >= 1)
+        {
+            update contactsToUpdate;
         }
     }
 }

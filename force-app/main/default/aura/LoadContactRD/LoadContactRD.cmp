@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	
+    <force:recordData aura:id="recordData"
+                      recordId = "{!v.recordId}"
+                      targetFields = "{!v.targetRecord}"
+                      targetError = "{!v.recordLoadError}"
+                      fields="Id,Name,Points__c"
+                      recordUpdated = "{!c.handleLoadedRecord}"/>
+    
+    <aura:attribute name="targetRecord" type="Object"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+    
+    <aura:registerEvent name="loadadContactWithRD" type="c:loadadContactWithRD"/>
+</aura:component>

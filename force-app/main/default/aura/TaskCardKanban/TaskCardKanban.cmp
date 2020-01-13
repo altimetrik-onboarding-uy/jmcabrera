@@ -1,66 +1,85 @@
 <aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="TaskCardKanbanController" >
-	<aura:attribute name="tasks" type='List' default="[]"/>
+    <aura:attribute name="tasks" type='List' default="[]"/>
     <aura:registerEvent name="openNewTaskCard" type="c:OpenNewTaskCard"/>
     <aura:registerEvent name="closeTask" type="c:CloseTaskEvent"/>
+    <aura:registerEvent name="deleteTask" type="c:DeleteTaskEvent"/>
     
-    <div class="borderContainer">
-        <lightning:layout verticalAlign="center" horizontalAlign="center">
-            <aura:if isTrue="{!not((v.tasks[0].WhoId == '-1'))}">
-                <aura:set attribute="else">
-                    <lightning:layoutItem>
-                        <lightning:card class="slds-card_boundary" aura:id="{!v.tasks[0].Task_Type__c}"  title="{!v.tasks[0].Task_Type__c + ' Tasks'}">
-                            <aura:set attribute="actions">
-                                <lightning:button name="{!v.tasks[0].Task_Type__c}" label="New Task" onclick="{!c.newTask}" />
-                            </aura:set>
-                            <p class="slds-p-horizontal_small">
-                                {!v.tasks[0].Task_Type__c}
-                            </p>
-                        </lightning:card>
-                    </lightning:layoutItem>
-                </aura:set>
-                <lightning:layoutItem>
-                    <lightning:card class="slds-card_boundary" aura:id="{!v.tasks[0].Task_Type__c}" title="{!v.tasks[0].Task_Type__c + ' Tasks'}">
-                        <aura:set attribute="actions">
-                            <lightning:button name="{!v.tasks[0].Task_Type__c}" label="New Task" onclick="{!c.newTask}" />
-                        </aura:set>
-                        <p class="slds-p-horizontal_small">
-                            {!v.tasks[0].Task_Type__c}
-                        </p>
-                    </lightning:card>
-                    <lightning:card title="">
-                        <aura:iteration items="{!v.tasks}" var="taskTypes">
-                            <lightning:card class="slds-card_boundary" title="{!taskTypes.name}">
-                                <aura:set attribute="actions">
-                                        <lightning:button name="{!v.tasks[0].Task_Type__c}" label="Close Task" onclick="{!c.newTask}" >
-                                    	<lightning:icon iconName="action:remove" size="medium" alternativeText="Close"/>                    
-                    						<span class="slds-assistive-text">Close</span>
-                                    </lightning:button>
-                                    </aura:set>
-                                <p class="slds-p-horizontal_small">
-                                    {!taskTypes.name}
-                                    
-                                    <lightning:tile label="{!taskTypes.name}">
-                                        <aura:set attribute="media">
-                                            <lightning:icon iconName="action:log_event"/>                                    
-                                        </aura:set>
-                                        <p class="slds-truncate" title="Company">Id: {!taskTypes.Id}</p>
-                                        <p class="slds-truncate" title="Company">Name: {!taskTypes.Task_Name__c}</p>
-                                        <p class="slds-truncate" title="Company">Points: {!taskTypes.Points__c}</p>
-                                        <p class="slds-truncate" title="Salesforce">Status: {!taskTypes.Status}</p>
-                                        <p class="slds-truncate" title="Salesforce">Description: {!taskTypes.Description__c}</p>
-                                        <p class="slds-truncate" title="Salesforce">IsClosed: {!taskTypes.IsClosed}</p>                                
-                                    </lightning:tile>
-                                    <div class="slds-align_absolute-center" style="height:5rem">
-                                        <lightning:button name="{!taskTypes.Id}" label="Complete Task" onclick="{!c.completeTask}" />
+    <lightning:card title="" >
+        <div class="backgroundDivContainer">
+            <lightning:layout horizontalAlign="center" multipleRows="true">
+                <aura:if isTrue="{!not((v.tasks[0].WhoId == '-1'))}">
+                    <aura:set attribute="else">
+                        <lightning:layoutItem flexibility="grow" class="slds-var-m-top_small">
+                            <lightning:button name="{!v.tasks[0].Task_Type__c}" 
+                                              label="{!' Add a ' + v.tasks[0].Task_Type__c}"
+                                              onclick="{!c.newTask}" class="addTasksButton slds-size_12-of-12 slds-button slds-button_neutral slds-button_stretch"
+                                              >
+                            </lightning:button>
+                        </lightning:layoutItem>
+                    </aura:set>
+                    <lightning:layoutItem flexibility="grow" class="slds-m-left_medium slds-m-right_medium">
+                        <lightning:layoutItem flexibility="grow"  class="slds-var-m-top_small">
+                            <lightning:button name="{!v.tasks[0].Task_Type__c}" 
+                                              label="{!' Add a ' + v.tasks[0].Task_Type__c}"
+                                              onclick="{!c.newTask}" class="addTasksButton slds-size_12-of-12 slds-button slds-button_neutral slds-button_stretch"
+                                              >
+                            </lightning:button>
+                        </lightning:layoutItem>
+                        <div class="slds-m-top_medium slds-m-bottom_medium ">
+                            <aura:iteration items="{!v.tasks}" var="taskTypes"> 
+                                <div class="taskDivContainer  slds-grid slds-m-top_medium slds-m-bottom_medium" >
+                                    <div class="slds-col slds-size_1-of-6 " style="float:left">
+                                        <aura:if isTrue="{!taskTypes.Task_Type__c == 'Habit'}">
+                                            <aura:set attribute="else">
+                                                <lightning:button name="{!'w-'+taskTypes.Id}" 
+                                                                  onclick="{!c.completeTask}"
+                                                                  class="completeButton slds-grid_vertical-stretch slds-size_12-of-12  slds-button_stretch">
+                                                    <lightning:icon  iconName="utility:zoomin" size="x-small" alternativeText="Close"/>
+                                                </lightning:button>
+                                            </aura:set>
+                                            <div class="slds-size_6-of-6 slds-grid_vertical-half-stretch" style="float:left">
+                                                <lightning:button name="{!'w-'+taskTypes.Id}" 
+                                                                  onclick="{!c.completeTask}"
+                                                                  class="completeButton slds-grid_vertical-stretch slds-size_12-of-12  slds-button_stretch">
+                                                    <lightning:icon  iconName="utility:zoomin" size="x-small" alternativeText="Close"/>
+                                                </lightning:button>
+                                            </div>
+                                            <div class="slds-size_6-of-6 slds-grid_vertical-stretch" style="float:left">
+                                                <lightning:button name="{!'f-'+taskTypes.Id}" 
+                                                                  onclick="{!c.completeTask}"
+                                                                  class="completeButton slds-float--left slds-grid_vertical-half-stretch slds-size_12-of-12  slds-button_stretch">
+                                                    <lightning:icon  iconName="utility:zoomout" size="x-small" alternativeText="Close"/>
+                                                </lightning:button>
+                                            </div>
+                                        </aura:if>
+                                        
                                     </div>
-                                </p>
-                            </lightning:card>
-                        </aura:iteration>
-                    </lightning:card>
-                    
-                </lightning:layoutItem>                    
-                <lightning:layoutItem size="1">&nbsp;</lightning:layoutItem>
-            </aura:if>  
-        </lightning:layout>
-    </div>
+                                    <div class="slds-col slds-size_4-of-6 slds-grid_vertical-stretch taskData">
+                                        <p class="slds-p-horizontal_small">
+                                            {!taskTypes.name}
+                                            <lightning:tile label="{!taskTypes.name}">
+                                                <aura:set attribute="media">
+                                                </aura:set>
+                                                <p class="slds-truncate " title="Company">{!taskTypes.Task_Name__c}</p>                    
+                                            </lightning:tile>
+                                            <div class="slds-align_absolute-center" style="height:5rem">
+                                            </div>
+                                        </p>
+                                    </div>
+                                     <div class="slds-col slds-size_1-of-6" style="float:right">
+                                       <aura:if isTrue="{!taskTypes.Task_Type__c == 'Habit'}">
+                                            <lightning:button name="{!taskTypes.Id}" label="" onclick="{!c.deleteTask}" 
+                                                              class="slds-grid_vertical-stretch backgroundDivContainer closeTaskButton">
+                                                <lightning:icon  iconName="action:close" size="xx-small" alternativeText="Close"/>
+                                            </lightning:button>
+                                        </aura:if>
+                                    </div>
+                                </div>
+                            </aura:iteration>
+                        </div>
+                    </lightning:layoutItem>
+                </aura:if>  
+            </lightning:layout>
+        </div>
+    </lightning:card>
 </aura:component>

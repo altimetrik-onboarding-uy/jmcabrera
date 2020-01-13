@@ -1,11 +1,42 @@
 .THIS {
-    background-color: grey;
+    background-color: #39255d;
 }
 
 .THIS.borderContainer {
-    border-radius: 25px;
+  
   	background-color: #40c764;
 }
-.THIS .white {
-    background-color: white;
+.THIS .backgroundDivContainer {
+    background-color: #d6d6d6;
+}
+.THIS .addTasksButton {
+    background-color: #a1a1a1;
+    font-size: medium;
+    font-weight: bold;
+    color: #6e6e6e;
+}
+.THIS .taskData {
+    font-size: small;
+    font-weight: bold;
+    color: #6e6e6e;
+    background-color:#f5eee6;
+}
+.THIS .completeButton {
+    background-color: #ffbc5d;    
+}
+.THIS .completeButtonIcon svg {
+    background-color : #e7964a;
+}
+.THIS .closeTaskButton {
+   
+    float:right;
+}
+.THIS .slds-grid_vertical-stretch {
+    height: 100%;
+}
+.THIS .slds-grid_vertical-half-stretch {
+    height: 50%;
+}
+.THIS .taskDivContainer {
+    background-color: #ebe8e8
 }

@@ -52,39 +52,49 @@
         return new Promise(
             $A.getCallback(
             	(resolve,reject) => {
-                    let taskType = event.getParam("taskType");
-                    let taskName = event.getParam("taskName");
-                    let taskDescription = event.getParam("taskDescription");
-                    let taskDifficulty = event.getParam("taskDifficulty");
-                    let taskSubject = event.getParam("taskSubject");
-                    let taskDueDate = event.getParam("taskDueDate");
+                    if(contactId !== undefined
+                    && contactId !== null
+                    && contactId !== "-1"
+                    && contactId !== -1)
+                    {
+                        let taskType = event.getParam("taskType");
+                        let taskName = event.getParam("taskName");
+                        let taskDescription = event.getParam("taskDescription");
+                        let taskDifficulty = event.getParam("taskDifficulty");
+                        let taskSubject = event.getParam("taskSubject");
+                        let taskDueDate = event.getParam("taskDueDate");
+                        
+                        let action = component.get("c.createNewTask");
                     
-                	let action = component.get("c.createNewTask");
-                    action.setParams({
-                        "taskType":taskType,
-                        "taskName":taskName,
-                        "taskDescription":taskDescription,
-                        "taskDifficulty":taskDifficulty,
-                        "taskSubject":taskSubject,
-                        "taskDueDate":taskDueDate,
-                    	"contactId":contactId
-                         });
-            
-                    	action.setCallback(this,(response) => {
-                            let state = response.getState();
-                            if(state === 'SUCCESS')
-                            {
-                                resolve(response.getReturnValue());
-                            }else
-                            {
-                                let errors = response.getError();
-                                if(errors)
+                        action.setParams({
+                            "taskType":taskType,
+                            "taskName":taskName,
+                            "taskDescription":taskDescription,
+                            "taskDifficulty":taskDifficulty,
+                            "taskSubject":taskSubject,
+                            "taskDueDate":taskDueDate,
+                            "contactId":contactId
+                             });
+                
+                            action.setCallback(this,(response) => {
+                                let state = response.getState();
+                                if(state === 'SUCCESS')
                                 {
-                                    reject(new Error(response.getError()[0].message));   
+                                    resolve(response.getReturnValue());
+                                }else
+                                {
+                                    let errors = response.getError();
+                                    if(errors)
+                                    {
+                                        reject(new Error(response.getError()[0].message));   
+                                    }
                                 }
-                            }
-                        });
- 					$A.enqueueAction( action );
+                            });
+                        $A.enqueueAction( action );
+                	}else 
+                    {
+                        reject(new Error("contact ID was not a valid value"));
+                    }
             	}
         	)
         );
@@ -133,6 +143,7 @@
         component.set("v.toDoTask",[{WhoId:'-1',Task_Type__c:'TO-DO'}]);
         component.set("v.dailyTask",[{WhoId:'-1',Task_Type__c:'Daily'}]);	
         component.set("v.habitTask",[{WhoId:'-1',Task_Type__c:'Habit'}]);
+        
     	if(tasksOfContact !== undefined && tasksOfContact.length >= 1)
         {
             let toDoTask = [];
@@ -142,10 +153,12 @@
             {
          		if(tasksOfContact[i].Task_Type__c == 'TO-DO')
 				{
-					toDoTask.push(tasksOfContact[i]);
+					if(tasksOfContact[i].Status !== 'Completed')
+                    {  toDoTask.push(tasksOfContact[i]);}
 				}else if(tasksOfContact[i].Task_Type__c == 'Daily')
 				{
-					dailyTask.push(tasksOfContact[i]);
+                    if(tasksOfContact[i].Status !== 'Completed')
+                    {dailyTask.push(tasksOfContact[i]);}
 				}else{
 					habitTask.push(tasksOfContact[i]);                              
 				}
@@ -164,8 +177,10 @@
         	$A.getCallback(
                 (resolve,reject) => {
                     let action = component.get("c.completeTask");
+                    let contactId = component.get("v.selectedContact").Id;
                     let taskId = event.getParam("taskId");
-                    action.setParams({"taskId":taskId});
+                    let state = event.getParam("state");
+                    action.setParams({"contactId":contactId,"taskId":taskId,"state":state});
        
             		action.setCallback(this,(response) => {
                     	let state = response.getState();
@@ -186,9 +201,50 @@
             )
         );    
     },
+	handleNewTaskModalOpenClose : function(component,event)
+    { 
+        let newTaskCardCmp = component.find("newTaskCardCmp");
+        if($A.util.hasClass(newTaskCardCmp,"slds-fade-in-open"))
+        {
+            $A.util.removeClass(newTaskCardCmp, 'slds-fade-in-open');
+            $A.util.removeClass(newTaskCardCmp.find("backDropDiv"),'slds-backdrop_open');
+            component.set("v.typeOfTask","");           
+        }else 
+        { 
+            $A.util.addClass(newTaskCardCmp,"slds-fade-in-open");
+            $A.util.addClass(newTaskCardCmp.find("backDropDiv"),'slds-backdrop_open');
+           
+            component.set("v.typeOfTask",event.getParam("typeOfTask")); 
+        }
+    },
+	deleteTaskHandler : function(component,event)
+    {
+        return new Promise($A.getCallback(
+            (resolve,reject) => {
+                let action = component.get("c.deleteTask");
+                let taskId = event.getParam("taskId");
+				action.setParams({"taskId":taskId});
+				action.setCallback(this,(response) => {
+                    let state = response.getState();
+                    if(state === 'SUCCESS')
+                    {
+                        resolve(response.getReturnValue());
+                    }else
+                    {
+                        let errors = response.getErrors();
+                        if(errors)
+                        {
+                            reject(new Error(response.getError()));   
+                        }
+                    }
+                });
+                $A.enqueueAction( action );
+            }
+        ));
+    },
 	displayToast : function(component,type,title,message)
     {
-    	let toastEvent = $A.get("e.force:showToast");
+        let toastEvent = $A.get("e.force:showToast");
         toastEvent.setParams({
             title : title,
             message: message,

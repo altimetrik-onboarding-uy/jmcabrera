@@ -6,9 +6,17 @@
 	},
     completeTask : function(component, event, helper)
     {
-        console.log("Complete task : " + event.getSource().get("v.name"));
         let closeTask = component.getEvent("closeTask");
-        closeTask.setParam("taskId",event.getSource().get("v.name"));
+        let eventSourceName = event.getSource().get("v.name");
+        let parsedName = eventSourceName.split("-");
+        closeTask.setParam("state",parsedName[0]);
+        closeTask.setParam("taskId",parsedName[1]);
         closeTask.fire();
+    },
+    deleteTask : function(component,event,helper)
+    {
+        let deleteTask = component.getEvent("deleteTask");
+        deleteTask.setParam("taskId",event.getSource().get("v.name"));
+        deleteTask.fire();
     }
 })

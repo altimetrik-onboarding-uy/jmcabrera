@@ -12,7 +12,11 @@
 	},
     saveNewTaskHandler : function(component, event,helper)
     {
-        helper.newTaskHandler(component);
-        helper.closeMe(component);
+        if(helper.validateform(component))
+        {
+             helper.newTaskHandler(component);
+       		 helper.closeMe(component);
+        }
+       
     }
 })
