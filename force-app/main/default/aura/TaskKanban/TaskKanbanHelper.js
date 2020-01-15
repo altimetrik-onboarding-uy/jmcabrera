@@ -1,4 +1,107 @@
 ({
+    processInit : function(component)
+    {
+        if(component.get("v.recordId")===undefined)
+        {
+            this.loadContactWithTasks(component).then(result => {
+                component.set("v.contactWithTasks",result);
+            }).catch(error => {
+                 this.displayToast(component,"error","Error while loading contacts!",error);
+            });
+		}
+    },	
+	processOnContactFromRDLoaded : function(component,event)
+    {
+        let targetContact = event.getParam("targetContact");
+        if(targetContact !== undefined
+            &&targetContact !== null)
+        {
+            if(targetContact.Id !== "-1")
+            {
+                component.set("v.selectedContact",targetContact);
+                this.loadTaskOfContact(component,component.get("v.selectedContact")["Id"]).then(result => {
+                    component.set("v.tasksOfContact",result);
+                    this.parseContactTaskIntoLists(component,result);
+                    
+                }).catch(error => {
+                    this.displayToast(component,"error","Error while loading contact!",error);
+                });  
+            }
+        }
+    },
+	processOpenNewTaskCardHandler : function(component,event)
+	{
+		let selectedContactId = component.find("contactSelected");
+        
+        if(component.get("v.recordId") !== undefined || (selectedContactId !== undefined  && selectedContactId.get("v.value") !== "-1" ))
+        {
+            this.handleNewTaskModalOpenClose(component,event);
+        }else 
+        {
+             this.displayToast(component,"error","Alert!","Please select a contact to continue");
+        }               
+	},
+	processContactListChangeHandler : function(component)
+	{
+		let selectedContactId = component.find("contactSelected").get("v.value");
+       
+		this.loadTaskOfContact(component,selectedContactId).then(result => {
+            component.set("v.selectedContact",this.getContactSelectChanged(component,selectedContactId));
+            this.parseContactTaskIntoLists(component,result);
+        }).catch(error => {
+           this.displayToast(component,"error","Error Loading task of contact!",error);
+        });  
+	},
+	processNewTaskHandler : function(component,event)
+	{
+	 	this.saveNewTask(component,event,component.get("v.selectedContact")["Id"]).then(result => {
+                this.displayToast(component,"success","Success!","Task Created Successfully!");
+                
+            this.loadTaskOfContact(component,component.get("v.selectedContact")["Id"]).then(result => {
+                component.set("v.tasksOfContact",result);
+                this.parseContactTaskIntoLists(component,result);
+                
+            }).catch(error => {
+                this.displayToast(component,"error","Error while loading task of contact!",error);
+            }); 
+
+        }).catch(error => {
+            this.displayToast(component,"error","Error while saving new task!",error);
+		});   
+	},
+	processCloseTaskHandler : function(component,event)
+	{
+		this.closeTask(component,event).then(result => {
+           		this.displayToast(component,"success","Success!","Task Completed Successfully!");
+                
+            this.loadTaskOfContact(component,component.get("v.selectedContact")["Id"]).then(result => {
+                component.set("v.tasksOfContact",result);
+                this.parseContactTaskIntoLists(component,result);
+                
+            }).catch(error => {
+                this.displayToast(component,"error","Error while loading task of contact!",error);
+            }); 
+
+        }).catch(error => {
+			this.displayToast(component,"error","Error while closing task!",error);
+		});     
+	},
+	processDeleteTaskHandler : function(component,event)
+	{	
+		this.deleteTaskHandler(component,event).then(result => {
+            this.displayToast(component,"success","Success!","Task Deleted Successfully!");
+            this.loadTaskOfContact(component,component.get("v.selectedContact")["Id"]).then(result => {
+                    component.set("v.tasksOfContact",result);
+                    this.parseContactTaskIntoLists(component,result);
+                    
+                }).catch(error => {
+                    this.displayToast(component,"error","Error while loading task of contact!",error);
+                }); 
+
+        }).catch(error => {
+            this.displayToast(component,"error","Error!","Task could not be Deleted!");
+        });   
+    },
 	loadContactWithTasks : function(component) {
         return new Promise(
             $A.getCallback(
@@ -133,7 +236,7 @@
             {
                 flag = true;
                 component.set("v.tasksOfContact",contactArray[i]["Tasks"]);
-                helper.parseContactTaskIntoLists(component,component.get("v.tasksOfContact"));
+                this.parseContactTaskIntoLists(component,component.get("v.tasksOfContact"));
             }
             i++;
         }

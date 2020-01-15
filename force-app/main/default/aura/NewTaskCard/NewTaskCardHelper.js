@@ -1,4 +1,24 @@
 ({
+    processCloseMe : function(component)
+    {
+ 		this.closeMe(component);        
+    },
+    processOpenNewTaskCardHandler : function(component,event)
+    {
+        let eTypOfTask = event.getParam("typeOfTask");
+        if(eTypeOfTask)
+        {
+            component.set("v.type",eTypeOfTask);
+        }
+    },
+    processSaveNewTaskHandler : function(component)
+    {
+        if(this.validateform(component))
+        {
+             this.newTaskHandler(component);
+       		 this.closeMe(component);
+        }
+    },
     validateform : function(component)
     {        
         var myInputs = component.find("taskForm").find({instancesOf : "lightning:input"});

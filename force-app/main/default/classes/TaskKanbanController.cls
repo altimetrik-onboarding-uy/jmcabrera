@@ -57,19 +57,10 @@ public without sharing class TaskKanbanController {
         List<string> tasksID = new List<string>{taskId};
         List<Task> tasksToUpdate = new List<Task>();
         List<Contact> contactsToUpdate = new List<Contact>();
-      /*  for(Task t : [SELECT id,status from Task where id = :taskId])
-        {
-            t.Status = 'Completed';
-            tasksToUpdate.add(t);
-        }
-        if(tasksToUpdate.size() >= 1)
-        {
-            update tasksToUpdate;
-        }*/
         
         for(Contact c : [SELECT id,name,Points__c,
                 	(Select Id,Subject,Task_Name__c,Description__c,ActivityDate,CreatedDate ,Task_Type__c,Points__c,Status,WhoId,IsClosed 
-                     FROM Tasks where id in :tasksID)
+                     FROM Tasks where id in :tasksID and Status != 'Completed')
                 from contact where id = :contactId])
         {
             if(c.tasks != null && c.tasks.size() >= 1)
@@ -78,16 +69,8 @@ public without sharing class TaskKanbanController {
                 
                 for(Task t : c.tasks)
                 {
-                    if(t.Status == 'Completed') continue;
-                    	
                     t.Status = 'Completed';
-                    if(state == 'w')
-                    {
-                        contactPoints += t.Points__c;
-                    }else 
-                    {
-                        contactPoints -= t.Points__c;
-                    }
+                    contactPoints += (state == 'w') ? t.Points__c : -t.Points__c;                    
                     tasksToUpdate.add(t);
                 }
                 c.Points__c = contactPoints;

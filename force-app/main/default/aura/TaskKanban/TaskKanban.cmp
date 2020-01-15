@@ -20,45 +20,42 @@
     <c:LoadContactRD aura:id="loadContactRd" recordId="{!v.recordId}" loadadContactWithRD="{!c.onContactFromRDLoaded}"/>
     
     <lightning:card title="">
-        <div class=" ">
-            <aura:if isTrue="{!empty(v.recordId)}">
-                <div class="slds-border_top slds-border_bottom slds-border_left slds-border_right  ">
-                    <lightning:layout verticalAlign="center" multipleRows="true">                    
-                        <lightning:layoutItem size="4">
-                            <div class="baseText slds-form_horizontal">
-                                <lightning:select aura:id="contactSelected"  name="select1" label="Contacts"  onchange="{!c.onContactListChangeHandler}">
-                                    <option value="-1">None</option>
-                                    <aura:iteration items="{!v.contactWithTasks}" var="ct">
-                                        <option value="{!ct.Id}">{!ct.Name}</option>
-                                    </aura:iteration>
-                                </lightning:select>
-                            </div>
-                        </lightning:layoutItem>
-                        <lightning:layoutItem size="12" >&nbsp;</lightning:layoutItem>
-                        <lightning:layoutItem size="4" >
-                            <div class="baseText slds-form_horizontal">
-                                <lightning:input aura:id="dateInput"  disabled="true" type="text" name="activityDate" label="Contact Points"  value="{!v.selectedContact.Points__c}" />
-                            </div>
-                        </lightning:layoutItem>
-                    </lightning:layout>
-                </div>
-            </aura:if>
-            
-            <lightning:card title=""> 
-                <div class="baseBackground">
-                    <lightning:layout multipleRows="true">
-                        <lightning:layoutItem size="4">
-                            <c:TaskCardKanban tasks="{!v.habitTask}" deleteTask="{!c.deleteTaskHandler}"/>
-                        </lightning:layoutItem>                
-                        <lightning:layoutItem size="4">
-                            <c:TaskCardKanban tasks="{!v.dailyTask}"/>
-                        </lightning:layoutItem>                
-                        <lightning:layoutItem size="4">
-                            <c:TaskCardKanban tasks="{!v.toDoTask}"/>
-                        </lightning:layoutItem>                
-                    </lightning:layout>
-                </div>
-            </lightning:card>
-        </div>
+        <aura:if isTrue="{!empty(v.recordId)}">
+            <div class="slds-border_top slds-border_bottom slds-border_left slds-border_right  ">
+                <lightning:layout verticalAlign="center" multipleRows="true">                    
+                    <lightning:layoutItem size="4">
+                        <div class="baseText slds-form_horizontal">
+                            <lightning:select aura:id="contactSelected"  name="select1" label="Contacts With Tasks"  onchange="{!c.onContactListChangeHandler}">
+                                <option value="-1">None</option>
+                                <aura:iteration items="{!v.contactWithTasks}" var="ct">
+                                    <option value="{!ct.Id}">{!ct.Name}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" >&nbsp;</lightning:layoutItem>
+                    <lightning:layoutItem size="4" >
+                        <div class="baseText slds-form_horizontal">
+                            <lightning:input aura:id="dateInput"  disabled="true" type="text" name="activityDate" label="Contact Points"  value="{!v.selectedContact.Points__c}" />
+                        </div>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+        </aura:if>
+        <lightning:card title=""> 
+            <div class="baseBackground">
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="4">
+                        <c:TaskCardKanban tasks="{!v.habitTask}" deleteTask="{!c.deleteTaskHandler}"/>
+                    </lightning:layoutItem>                
+                    <lightning:layoutItem size="4">
+                        <c:TaskCardKanban tasks="{!v.dailyTask}"/>
+                    </lightning:layoutItem>                
+                    <lightning:layoutItem size="4">
+                        <c:TaskCardKanban tasks="{!v.toDoTask}"/>
+                    </lightning:layoutItem>                
+                </lightning:layout>
+            </div>
+        </lightning:card>
     </lightning:card>
 </aura:component>

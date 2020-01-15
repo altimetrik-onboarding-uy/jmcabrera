@@ -1,22 +1,13 @@
 ({
 	closeMe : function(component, event, helper) {
-        helper.closeMe(component);
+       helper.processCloseMe(component);
 	},
     openNewTaskCardHandler : function(component, event,helper)
     {
-    	let eTypOfTask = event.getParam("typeOfTask");
-        if(eTypeOfTask)
-        {
-            component.set("v.type",eTypeOfTask);
-        }
+        helper.processOpenNewTaskCardHandler(component,event);    	
 	},
     saveNewTaskHandler : function(component, event,helper)
     {
-        if(helper.validateform(component))
-        {
-             helper.newTaskHandler(component);
-       		 helper.closeMe(component);
-        }
-       
+        helper.processSaveNewTaskHandler(component);        
     }
 })
