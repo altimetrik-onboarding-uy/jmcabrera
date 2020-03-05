@@ -1,0 +1,1107 @@
+[
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577984,
+            "changeTime": 1582115577984,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577986,
+            "changeTime": 1582115577986,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115578369,
+            "changeTime": 1582115578369,
+            "contentHash": "134fb9100108b9aaba9aee713cf235d514fd8f88",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\applications",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\applications",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577987,
+            "changeTime": 1582115577987,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\aura",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577989,
+            "changeTime": 1582115577989,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672512,
+            "changeTime": 1582115672512,
+            "contentHash": "6a37aa781ead45e4bdf1e9ac34498007a33e72ca",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes\\ToDoController.cls",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes\\ToDoController.cls",
+            "isDirectory": false,
+            "size": 1889,
+            "modifiedTime": 1582126403053,
+            "changeTime": 1582126403053,
+            "contentHash": "bae05a95dc0b9c5b6ed6509766db03736a13c07f",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes\\ToDoController.cls-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\classes\\ToDoController.cls-meta.xml",
+            "isDirectory": false,
+            "size": 174,
+            "modifiedTime": 1582115672489,
+            "changeTime": 1582115672489,
+            "contentHash": "50701282159e2679109ad6da2dfbb354eca50ce0",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\contentassets",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\contentassets",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577992,
+            "changeTime": 1582115577992,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\flexipages",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\flexipages",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577993,
+            "changeTime": 1582115577993,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672538,
+            "changeTime": 1582115672538,
+            "contentHash": "cbcc2bf77734c5d0607919c75105922f980e2629",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\KanbanLwc__c-KanbanLwc Layout.layout-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\KanbanLwc__c-KanbanLwc Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 1947,
+            "modifiedTime": 1582115672524,
+            "changeTime": 1582115672524,
+            "contentHash": "11d783040f4136795b5cfb29705ebffa45e29dff",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\Pipeline__c-Pipeline Layout.layout-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\Pipeline__c-Pipeline Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 2005,
+            "modifiedTime": 1582115672531,
+            "changeTime": 1582115672531,
+            "contentHash": "23cbbff3f4506631cec2555d2596ea30d74bb58e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\TaskCard__c-TaskCard Layout.layout-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\layouts\\TaskCard__c-TaskCard Layout.layout-meta.xml",
+            "isDirectory": false,
+            "size": 1947,
+            "modifiedTime": 1582115672538,
+            "changeTime": 1582115672538,
+            "contentHash": "11d783040f4136795b5cfb29705ebffa45e29dff",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883711,
+            "changeTime": 1582115883711,
+            "contentHash": "0e0d493c75f0cdec4b16a0ad5f301dad4ffc5bc0",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883609,
+            "changeTime": 1582115883609,
+            "contentHash": "2320ca12c68193e1ecee209876a03d595b3defc2",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.html",
+            "isDirectory": false,
+            "size": 2238,
+            "modifiedTime": 1582115883605,
+            "changeTime": 1582115883605,
+            "contentHash": "1a3aeb5fbfd7089b46fd243633a0e6b0f8115c98",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.js",
+            "isDirectory": false,
+            "size": 949,
+            "modifiedTime": 1582115883609,
+            "changeTime": 1582115883609,
+            "contentHash": "c9fc7371275269ab6cdc8a37cd888dfa7e876a5c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewCardTask\\addNewCardTask.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883601,
+            "changeTime": 1582115883601,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883623,
+            "changeTime": 1582115883623,
+            "contentHash": "b6f78136618db19476bec1ec1a1d176ecc2e06b2",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.html",
+            "isDirectory": false,
+            "size": 2534,
+            "modifiedTime": 1582115883620,
+            "changeTime": 1582115883620,
+            "contentHash": "817040b57f447ac46ab39f97cb65a21698906db4",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.js",
+            "isDirectory": false,
+            "size": 1158,
+            "modifiedTime": 1582115883623,
+            "changeTime": 1582115883623,
+            "contentHash": "f1164a735c8e6e6498b28db2e37f9feed572ec24",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\addNewKanban\\addNewKanban.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883616,
+            "changeTime": 1582115883616,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883635,
+            "changeTime": 1582115883635,
+            "contentHash": "2ba7fd0b9c22b9c85dd2b9391ff824382bfb6f05",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.html",
+            "isDirectory": false,
+            "size": 1793,
+            "modifiedTime": 1582115883633,
+            "changeTime": 1582115883633,
+            "contentHash": "7b3d065388153728da93f8cad867d6814a750959",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.js",
+            "isDirectory": false,
+            "size": 474,
+            "modifiedTime": 1582115883636,
+            "changeTime": 1582115883636,
+            "contentHash": "dbcfec43f3e4600a08cd70b905f31b97e1195157",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteKanbanConfirmModal\\deleteKanbanConfirmModal.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883630,
+            "changeTime": 1582115883630,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883649,
+            "changeTime": 1582115883649,
+            "contentHash": "6baa23a532208051c0514518c421e2d1aeb71a70",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.html",
+            "isDirectory": false,
+            "size": 1789,
+            "modifiedTime": 1582115883646,
+            "changeTime": 1582115883646,
+            "contentHash": "3b9f34127a05cfaa167607435cd1ade7c7d49339",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.js",
+            "isDirectory": false,
+            "size": 469,
+            "modifiedTime": 1582115883650,
+            "changeTime": 1582115883650,
+            "contentHash": "b6b0fc9dd6405b9116329cc7723c45a7161e62ca",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\deleteTaskConfirmModal\\deleteTaskConfirmModal.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883643,
+            "changeTime": 1582115883643,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883664,
+            "changeTime": 1582115883664,
+            "contentHash": "a93b8b0540fc6a8d2a540fff301f69691889c624",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.html",
+            "isDirectory": false,
+            "size": 3981,
+            "modifiedTime": 1582118334801,
+            "changeTime": 1582118334801,
+            "contentHash": "0a97d6186fead4f8219c50ebcb90ae61a25a7194",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.js",
+            "isDirectory": false,
+            "size": 16826,
+            "modifiedTime": 1582119879021,
+            "changeTime": 1582119879021,
+            "contentHash": "229a1a383a657304ddf2eba5b5c0b7f06fc7c6e4",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\kanbanLwc\\kanbanLwc.js-meta.xml",
+            "isDirectory": false,
+            "size": 463,
+            "modifiedTime": 1582124023091,
+            "changeTime": 1582124023091,
+            "contentHash": "f132c018fcae0a67bee12dd72fbd8ae2854b0411",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883677,
+            "changeTime": 1582115883677,
+            "contentHash": "2e8465c816a51b99f7fed003e9fcd73a7c9e0f04",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.html",
+            "isDirectory": false,
+            "size": 4075,
+            "modifiedTime": 1582115883674,
+            "changeTime": 1582115883674,
+            "contentHash": "d1f2e1d95bb22b8047cd47406149e1222b45b988",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.js",
+            "isDirectory": false,
+            "size": 16042,
+            "modifiedTime": 1582115883677,
+            "changeTime": 1582115883677,
+            "contentHash": "e7d4140d4962e0500ad07f48dc18ae00e9b5266e",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\mainContainer\\mainContainer.js-meta.xml",
+            "isDirectory": false,
+            "size": 413,
+            "modifiedTime": 1582115883671,
+            "changeTime": 1582115883671,
+            "contentHash": "a9ffaffb8467d6c4406550c40aa87da49da140b4",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883691,
+            "changeTime": 1582115883691,
+            "contentHash": "84e8df39c57e663040ce4eb5d80e7edd3a590478",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.html",
+            "isDirectory": false,
+            "size": 1912,
+            "modifiedTime": 1582115883689,
+            "changeTime": 1582115883689,
+            "contentHash": "efd9841787f0151bd43fe6c334bccbb8e22bfead",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.js",
+            "isDirectory": false,
+            "size": 611,
+            "modifiedTime": 1582115883691,
+            "changeTime": 1582115883691,
+            "contentHash": "47b3fcc44caf17193ab6760a7ee8ab96012f6f13",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\modifyPipeline\\modifyPipeline.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883685,
+            "changeTime": 1582115883685,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883704,
+            "changeTime": 1582115883704,
+            "contentHash": "7f2c44b0f9f01e3346fc4944b931a24d026a88cc",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.html",
+            "isDirectory": false,
+            "size": 1988,
+            "modifiedTime": 1582115883701,
+            "changeTime": 1582115883701,
+            "contentHash": "e3d8fd04c8f1fd2517c248808486b1cd1128fe3b",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.js",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 9937,
+            "modifiedTime": 1582133342388,
+            "changeTime": 1582133342388,
+            "isWorkspace": false,
+            "contentHash": "448f7ddcea7be84d3abb911aee5588d110dbc963"
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\pipeline\\pipeline.js-meta.xml",
+            "isDirectory": false,
+            "size": 373,
+            "modifiedTime": 1582115883698,
+            "changeTime": 1582115883698,
+            "contentHash": "c28c073fc41e6f1b8a96b6a73bb39d69bb09817e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115883723,
+            "changeTime": 1582115883723,
+            "contentHash": "88db2b533c50caf2abeaf31abd5fb438ce21451d",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.css",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.css",
+            "isDirectory": false,
+            "size": 85,
+            "modifiedTime": 1582115883715,
+            "changeTime": 1582115883715,
+            "contentHash": "e0174fd51bd0d2f91c6daf63ab07554a55bea824",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.html",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.html",
+            "isDirectory": false,
+            "size": 2356,
+            "modifiedTime": 1582115883718,
+            "changeTime": 1582115883718,
+            "contentHash": "06afaa9b5375c626e3de01aa587a329fa9696112",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.js",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.js",
+            "isDirectory": false,
+            "size": 1815,
+            "modifiedTime": 1582115883723,
+            "changeTime": 1582115883723,
+            "contentHash": "0ab4eac30e632cbc9559a68f067042d38d0ff45a",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.js-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\lwc\\taskCard\\taskCard.js-meta.xml",
+            "isDirectory": false,
+            "size": 209,
+            "modifiedTime": 1582115883712,
+            "changeTime": 1582115883712,
+            "contentHash": "8f4c4eb3748ad495516f3a93f9b498d78780d163",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672627,
+            "changeTime": 1582115672627,
+            "contentHash": "cbfbfccf36ac762feed05a0af49fcba6a163c3e7",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672569,
+            "changeTime": 1582115672569,
+            "contentHash": "25dedde36c72eefa4f171a18c2784b3ed02c1c6c",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\fields",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672570,
+            "changeTime": 1582115672570,
+            "contentHash": "00440ab32af7eee4a8eac9d475a6ffdd3ccf688d",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\fields\\Contact__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\fields\\Contact__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 504,
+            "modifiedTime": 1582115672570,
+            "changeTime": 1582115672570,
+            "contentHash": "3e3df4fb1aafab285191d34971263c71cccb532e",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\KanbanLwc__c.object-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\KanbanLwc__c\\KanbanLwc__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5169,
+            "modifiedTime": 1582115672567,
+            "changeTime": 1582115672567,
+            "contentHash": "649a4413d402f34e1e205a047ffd206b291bb815",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672596,
+            "changeTime": 1582115672596,
+            "contentHash": "c61ab6d266bc0bd862cda709105268050643c237",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\fields",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672597,
+            "changeTime": 1582115672597,
+            "contentHash": "72061bf3af46da8fee440e837e1be6691c1ce591",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\fields\\KanbanLwc__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\fields\\KanbanLwc__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 604,
+            "modifiedTime": 1582115672597,
+            "changeTime": 1582115672597,
+            "contentHash": "ce0a2801b6a028225a97295e36e82d3424f11749",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\Pipeline__c.object-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\Pipeline__c\\Pipeline__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5185,
+            "modifiedTime": 1582115672593,
+            "changeTime": 1582115672593,
+            "contentHash": "96e33ece6857fd03fb3174ca35bc2291f029fadb",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672633,
+            "changeTime": 1582115672633,
+            "contentHash": "80486213889834be301e4354d46ce58ea539a49a",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115672644,
+            "changeTime": 1582115672644,
+            "contentHash": "835601693038e0db7f9b3ca66e9ffdbb84efa0c5",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Description__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Description__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 320,
+            "modifiedTime": 1582115672634,
+            "changeTime": 1582115672634,
+            "contentHash": "30ee205b69a4eccf0f5af971cf2460542238e3f2",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\IndexInPipeline__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\IndexInPipeline__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 439,
+            "modifiedTime": 1582115672637,
+            "changeTime": 1582115672637,
+            "contentHash": "4425a9c52eacbaa55bac6bdcd3f5de090d59f1ba",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Pipeline__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Pipeline__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 508,
+            "modifiedTime": 1582115672639,
+            "changeTime": 1582115672639,
+            "contentHash": "6f059b515ea1f22391406cbee77c594e3c50fc7a",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Status__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Status__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 1182,
+            "modifiedTime": 1582115672642,
+            "changeTime": 1582115672642,
+            "contentHash": "4ce7d28af47ad0817c81e01f7e1012cbb6f01485",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Type__c.field-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\fields\\Type__c.field-meta.xml",
+            "isDirectory": false,
+            "size": 354,
+            "modifiedTime": 1582115672644,
+            "changeTime": 1582115672644,
+            "contentHash": "f898657eee65c5a4aaaf864ae6ef3dfa39de2651",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\TaskCard__c.object-meta.xml",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\objects\\TaskCard__c\\TaskCard__c.object-meta.xml",
+            "isDirectory": false,
+            "size": 5166,
+            "modifiedTime": 1582115672630,
+            "changeTime": 1582115672630,
+            "contentHash": "26ebd55a760dcc2ae529ea7e689219a8f20a2c37",
+            "isMetadataFile": true,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\permissionsets",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\permissionsets",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577998,
+            "changeTime": 1582115577998,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\staticresources",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\staticresources",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115577999,
+            "changeTime": 1582115577999,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\tabs",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\tabs",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115578001,
+            "changeTime": 1582115578001,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\triggers",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)\\force-app\\main\\default\\triggers",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115578002,
+            "changeTime": 1582115578002,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)",
+        {
+            "sourcePath": "C:\\Users\\jcabrera\\projects\\LWC_Stuff\\KanbanLWC(TODO)\\KanbanLWC(TODO)",
+            "isDirectory": true,
+            "size": 0,
+            "modifiedTime": 1582115636974,
+            "changeTime": 1582115636974,
+            "contentHash": "27a739f55668d74cbf908158c50b0cbaedbe0b1a",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

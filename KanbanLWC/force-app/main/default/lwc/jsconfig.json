@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/addNewCardTask": [
+                "addNewCardTask/addNewCardTask.js"
+            ],
+            "c/addNewKanban": [
+                "addNewKanban/addNewKanban.js"
+            ],
+            "c/deleteKanbanConfirmModal": [
+                "deleteKanbanConfirmModal/deleteKanbanConfirmModal.js"
+            ],
+            "c/deleteTaskConfirmModal": [
+                "deleteTaskConfirmModal/deleteTaskConfirmModal.js"
+            ],
+            "c/kanbanLwc": [
+                "kanbanLwc/kanbanLwc.js"
+            ],
+            "c/mainContainer": [
+                "mainContainer/mainContainer.js"
+            ],
+            "c/modifyPipeline": [
+                "modifyPipeline/modifyPipeline.js"
+            ],
+            "c/pipeline": [
+                "pipeline/pipeline.js"
+            ],
+            "c/taskCard": [
+                "taskCard/taskCard.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
