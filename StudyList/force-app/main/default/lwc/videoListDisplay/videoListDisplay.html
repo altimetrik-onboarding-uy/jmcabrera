@@ -1,0 +1,28 @@
+<template>
+    <div class="container">
+        <template for:each={thumbnails} for:item="song" for:index="index">
+            <div class="column" key={song.index}>
+                <span > {index}
+                    <img src={song}  alt="Smiley face" height="100" width="100%" onclick={openModal}
+                    class="thumbnails">
+                </span>
+            </div>
+        </template>
+        <button class="playAllbtn" onclick={handlePlayAll}>Play All</button>
+    </div>
+    <template if:true={openmodel}>
+        <div class="modal">
+            <button class="btnClose" title="Close" onclick={closeModal}>
+                <lightning-icon icon-name="utility:close" size="xx-small">
+                </lightning-icon>
+            </button>
+            <c-basic-you-tube-player you-tube-id={currentSong}></c-basic-you-tube-player>
+            <template if:true={playAll}>
+                <div class="options">
+                    <button class="btn" onclick={handleBack}>Back</button>
+                    <button class="btn" onclick={handleNext}>Next</button>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>

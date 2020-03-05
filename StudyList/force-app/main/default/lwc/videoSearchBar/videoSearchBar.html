@@ -1,0 +1,38 @@
+<template>
+    <div class="slds-box">
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12">
+                <lightning-layout>
+                    <lightning-layout-item size="8">
+                        <div class="slds-form_horizontal slds-form slds-grid slds-wrap">
+                            <lightning-input style="float: left;" 
+                                name="ListNameInput" 
+                                label="Search Video"
+                                placeholder="type here..."
+                                value={searchTerm}
+                                onchange={handleSearchTermChange}></lightning-input>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="4">
+                        <lightning-button label="Search"  variant="brand" onclick={showValues}></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" >
+                <lightning-layout-item size="12">
+                    <div class="slds-scrollable_y" style="height:15rem;">
+                        <template for:each={availableVideoResults} for:item="videos">
+                            <c-video-search-card 
+                                key={video}
+                                video-title={videos.videoTitle}
+                                video-id={videos.videoId}
+                                thumbnail-src={videos.thumbnailSrc}
+                                onaddcardtolist={handleAddCardToList}
+                            ></c-video-search-card>
+                        </template>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

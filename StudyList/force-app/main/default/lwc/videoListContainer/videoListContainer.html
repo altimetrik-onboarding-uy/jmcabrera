@@ -1,0 +1,75 @@
+<template>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={handleCloseMe}>
+                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Creating Study List</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <lightning-layout>
+                    <lightning-layout-item size="6">
+                        <c-video-search-bar
+                        onaddcardtolist={handleAddCardToList}></c-video-search-bar>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="6">
+                        <div class="slds-form_horizontal slds-form slds-grid slds-wrap">
+                            <lightning-input style="float: left;" name="ListNameInput" 
+                                        label="List Name"
+                                        placeholder="type here..."
+                                        value={listName}
+                                        onchange={handleListNameChange}></lightning-input>
+                        </div>
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate">&nbsp;</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate">Url</div>
+                                    </th>
+                                    <th class="" scope="col">
+                                        <div class="slds-truncate">Description</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div class="slds-box ">
+                            <lightning-button-icon icon-name="action:new" 
+                            alternative-text="Save"
+                            onclick={handleSaveAddNewVideoCard}
+                                class="slds-button slds-button_stretch" title="Save" size="large">
+                            </lightning-button-icon>
+                        </div>
+                        <div class="slds-scrollable_y" style="height:15rem">
+                            <template for:each={availableVideoCards} for:item="videoCards">
+                                <c-video-list-card-tile key={videoCards}
+                                    index-id={videoCards.IndexInPipeline__c}
+                                    video-title={videoCards.videoTitle}
+                                    video-url={videoCards.ArticleUrl__c}
+                                    thumbnail-src={videoCards.thumbnailSrc}
+                                    description={videoCards.Description__c}
+                                    ondeletecard={handleDeleteListCard}
+                                    onsavevideocardtiledata={handleSaveTileCardData}>
+                                </c-video-list-card-tile>
+                            </template>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+                
+            </div>
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick={handleCloseMe}>Cancel</button>
+                <button class="slds-button slds-button_brand" onclick={handleSave}>Save</button>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

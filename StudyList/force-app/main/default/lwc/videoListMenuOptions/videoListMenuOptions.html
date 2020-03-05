@@ -1,0 +1,54 @@
+<template>
+    <div style="height: 128px; z-index:5; position: absolute;">
+        <footer class="slds-utility-bar_container" aria-label="Utility Bar">
+            <h2 class="slds-assistive-text">Utility Bar</h2>
+            <ul class="slds-utility-bar">
+                <li class="slds-utility-bar__item">
+                    <button class="slds-button slds-utility-bar__action" aria-pressed="false"
+                        onclick={handleOpenVideoMenuOptions}>
+                        <span class="slds-utility-bar__text">Menu</span>
+                    </button>
+                </li>
+            </ul>
+            <template if:true={showVideoListMenuOptions}>
+                <div class="slds-utility-panel slds-grid slds-grid_vertical slds-is-open" role="dialog"
+                    aria-labelledby="panel-heading-01">
+                    <div class="slds-utility-panel__header slds-grid slds-shrink-none">
+                        <div class="slds-media slds-media_center">
+                            <div class="slds-media__figure slds-m-right_x-small">
+                                <span class="slds-icon_container">
+
+                                </span>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 id="panel-heading-01">Options</h2>
+                            </div>
+                        </div>
+                        <div class="slds-col_bump-left slds-shrink-none">
+                            <button class="slds-button slds-button_icon slds-button_icon" title="Close Panel"
+                                onclick={handleCloseVideoMenuOptions}>
+                                <lightning-icon class="slds-button__icon" size="x-small" icon-name="utility:dash"
+                                    alternative-text="Approved" title="Approved"></lightning-icon>
+                                <span class="slds-assistive-text">Close Panel</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slds-utility-panel__body">
+                        <lightning-card class="" onmouseover={handleOnMouseOver} onmouseout={handleOnMouseOut}>
+                            <button type="neutral" class="slds-button slds-button_brand slds-button_stretch"
+                                onclick={handleOpenCreateStudyList}>Create Study List</button>
+                        </lightning-card>
+                        <lightning-card class="" onmouseover={handleOnMouseOver} onmouseout={handleOnMouseOut}>
+                            <button type="neutral" class="slds-button slds-button_brand slds-button_stretch">Open Study
+                                List</button>
+                        </lightning-card>
+                        <lightning-card class="" onmouseover={handleOnMouseOver} onmouseout={handleOnMouseOut}>
+                            <button type="neutral" class="slds-button slds-button_brand slds-button_stretch">Assign
+                                Study List</button>
+                        </lightning-card>
+                    </div>
+                </div>
+            </template>
+        </footer>
+    </div>
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <c-video-list-menu-options
+        onclosevideomenuoptions={handleCloseVideoMenuOptions}
+        onopencreatestudylist={handleOpenCreateStudyList}
+    ></c-video-list-menu-options>
+    <c-video-list-display></c-video-list-display>
+    <template if:true={showAddNewStudyList}>
+        <c-video-list-container
+        onopenaddnewvideocardmodal={handleOpenAddNewVideoCardModal}
+        onclosecideolistcontainer={handleCloseVideoListContainer}
+        onsavestudylist={handleSaveStudyList}>
+        </c-video-list-container>
+    </template>
+    <template if:true={showAddNewVideoCardModal}>
+        <c-add-new-video-card-modal 
+            oncloseaddnewvideocard={handleCloseAddNewVideoCard}
+            onsaveaddnewvideocard={handleSaveAddNewVideoCard}></c-add-new-video-card-modal>
+    </template>
+</template>

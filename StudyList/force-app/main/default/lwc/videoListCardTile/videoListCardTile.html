@@ -1,0 +1,69 @@
+<template>
+  <lightning-layout class="slds-border_top slds-border_right slds-border_left slds-border_bottom">
+    <lightning-layout-item size="4">
+      <span>{videoTitle}</span>
+      <img src={thumbnailSrc} alt="Smiley face" height="42" width="42">
+      <div class="slds-truncate" title="Analytics" style="text-align: center;">
+        <input type="text"
+        placeholder="Url" 
+        required="" 
+        class="slds-input" 
+        value={videoUrl}
+        disabled={inputsDisabled}
+        onchange={handleUrlChange}/>
+        
+      </div>
+    </lightning-layout-item>
+    <lightning-layout-item size="4">
+      <div class="slds-scrollable_y" >
+        <lightning-textarea name="input1"  placeholder="Description" 
+       
+        variant="label-hidden"
+        class="slds-input" 
+        value={Description__c}
+        disabled={inputsDisabled}
+        onchange={handleDescriptionChange} ></lightning-textarea>
+      </div>
+    </lightning-layout-item>
+    
+    <lightning-layout-item size="3" class="right-align">
+      <lightning-layout multiple-rows="true">
+        <lightning-layout-item size="3">
+          <lightning-button-icon icon-name="action:edit" 
+                        alternative-text="Edit"
+                        onclick={handleEditAction}
+                        disabled={editingCard}
+                            class="slds-button slds-button_stretch" title="Edit" size="large">
+                        </lightning-button-icon>
+        </lightning-layout-item>
+        
+        <template if:false={editingCard}>
+          <lightning-layout-item size="3">
+            <lightning-button-icon icon-name="action:delete" 
+                          alternative-text="Delete"
+                          onclick={handleDeleteAction}
+                              class="slds-button slds-button_stretch" title="Delete" size="large">
+                          </lightning-button-icon>
+          </lightning-layout-item>
+        </template>
+        <template if:true={editingCard}>
+          <lightning-layout-item size="3">
+            <lightning-button-icon icon-name="utility:save" 
+                          alternative-text="Save Changes"
+                          onclick={handleSaveAction}
+                              class="slds-button slds-button_stretch" title="Save Changes" size="large">
+                          </lightning-button-icon>
+          </lightning-layout-item>
+          <lightning-layout-item size="3">
+            <lightning-button-icon icon-name="action:close" 
+                          alternative-text="Close"
+                          onclick={handleCloseAction}
+                              class="slds-button slds-button_stretch" title="Close" size="large">
+                          </lightning-button-icon>
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </lightning-layout-item>
+    
+  </lightning-layout>
+</template>

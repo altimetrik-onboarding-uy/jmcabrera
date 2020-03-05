@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-box" >
+        <lightning-layout>
+            <lightning-layout-item size="8">
+                <img src={thumbnailSrc} alt="Smiley face" height="42" width="42">
+            </lightning-layout-item>
+            <lightning-layout-item size="2">
+                <span>{videoTitle}</span>
+            </lightning-layout-item>
+            <lightning-layout-item size="2">
+                <lightning-button label="+" onclick={handleAddCardToList} variant="neutral"></lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+            </lightning-layout-item>
+        </lightning-layout>        
+    </div>
+</template>
